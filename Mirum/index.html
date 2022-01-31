@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Mirum</title>
+
+	<link rel="stylesheet" href="example/normalize.css">
+	<link rel="stylesheet" href="example/main.css">
+
+
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+	<link rel="stylesheet" href="example/source/WOW/css/libs/animate.css">
+	<link rel="stylesheet" href="example/source/font-awesome-4.7.0/css/font-awesome.css">
+
+	<script src="example/js/jquery.js"></script>
+	<script src="example/js/slick.min.js"></script>
+	<script src="https://unpkg.com/vue"></script>
+	<script src="example/source/WOW/dist/wow.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.5.1/chart.min.js"></script>
+	<script src="https://unpkg.com/imask"></script>
+</head>
+
+<body>
+	<header class="header">
+		<div class="container">
+			<div class="logo">
+				<img src="example/images/logo.png" alt="logo">
+			</div>
+			<div class="nav">
+				<div class="phones">
+					<a href="tel:77078019119">+7 707 801 91 19 </a>
+					<p>отдел продаж</p>
+				</div>
+
+
+				<a href="https://mirum.kz/login" class="btn-log">Войти</a>
+				<a href="#form" class="btn-reg">Регистрация</a>
+			</div>
+		</div>
+	</header>
+
+	<section class="intro">
+		<div class="container">
+			<div class="text">
+				<h1 class="wow animate__fadeInLeft">Занимайся всего по 40 минут в день и повышай свои шансы на
+					поступление в НИШ до 100%!</h1>
+			</div>
+		</div>
+		<div class="sidebar wow animate__fadeInDown">
+			<div class="sidebar-item">
+				<a href="https://www.youtube.com/watch?v=HJM3_gIrojs&ab_channel=MirumEducationPlatform" class="">
+					<div class="item-img"></div>
+				</a>
+				<div class="item-desc">
+					<h2>Что такое Mirum?</h2>
+					<p>Смотреть короткое видео о программе NIS Preparation Course </p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="module">
+		<div class="container">
+			<div class="wrap">
+				<div class="text wow animate__fadeInLeft">
+					<h1>NIS Preparation Course</h1>
+					<p>Полный модуль подготовки в Назарбаев Интеллектуальную школу
+						от лучших тренеров Казахстана
+					</p>
+				</div>
+				<div class="inner-img wow animate__fadeInRight">
+					<img src="example/images/Второй слой.jpg" alt="">
+				</div>
+			</div>
+			<div class="content">
+
+				<div class="item wow animate__fadeInLeft">
+					<div class="item-flex">
+						<img src="example/images/icon-control.png" alt="">
+						<p>Более 80 готовых видеоуроков</p>
+					</div>
+
+					<div class="item-flex">
+						<img src="example/images/icon-material.png" alt="">
+						<p>Еженедельные тренировочные тесты</p>
+					</div>
+
+					<div class="item-flex">
+						<img src="example/images/icon-control.png" alt="">
+						<p>Видеоразборы заданий</p>
+					</div>
+				</div>
+
+				<div class="item wow animate__fadeInLeft">
+					<div class="item-flex">
+						<img src="example/images/icon-use.png" alt="">
+						<p>Текстовые разборы заданий</p>
+					</div>
+
+					<div class="item-flex">
+						<img src="example/images/icon-control.png" alt="">
+						<p>Тренинги по успешной подготовке и сдаче тестов</p>
+					</div>
+
+					<div class="item-flex">
+						<img src="example/images/icon-use.png" alt="">
+						<p>Персональный куратор</p>
+					</div>
+				</div>
+
+				<div class="item wow animate__fadeInLeft">
+					<div class="item-flex">
+						<img src="example/images/icon-process.png" alt="">
+						<p>Анализ прогресса</p>
+					</div>
+
+					<div class="item-flex">
+						<img src="example/images/icon-material.png" alt="">
+						<p>Разработка плана подготовки</p>
+					</div>
+
+					<div class="item-flex">
+						<img src="example/images/icon-process.png" alt="">
+						<p>Онлайн видеоуроки в режиме реального времени</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+	<section class="reviews">
+		<div class="container">
+			<div class="content">
+				<div class="inner-text wow animate__fadeInLeft">
+					<p>В 2020-2021 учебном году мы приняли 50 учеников на онлайн-программу по подготовке к НИШ, из них
+						поступили – 28, также 17 претендентов – в списке резервистов. </p>
+
+					<p>По программе очного обучения из 122 претендентов учащимися НИШ, БИЛ и РФМШ стали 78 наших детей.
+					</p>
+
+					<p>В 2022 году мы поставили новую цель – минимум 70% наших учеников станут обладателями
+						образовательных грантов в ведущих школах страны. </p>
+				</div>
+				<div class="inner-diagram">
+					<canvas id="myChart" width="500px" height="300px"></canvas>
+
+				</div>
+			</div>
+			<div class="title">
+				<h1>Отзывы о NIS Preparation Course:</h1>
+			</div>
+		</div>
+
+
+		<div class="slider wow animate__fadeInUp">
+			<div class="slider-item">
+				<div class="item-img">
+					<img src="example/images/Сидоренко Андрей.jpeg" alt="">
+				</div>
+				<div class="item-text">
+					<h1>Сидоренко Андрей (поступил в НИШ)</h1>
+					<p>Рад сообщить, что мне присуждён Грант. У меня 14 результат по школе.
+						Спасибо вам за все чему Вы меня научили. Мне было очень интересно заниматься у вас в течение
+						всего учебного года.
+					</p>
+				</div>
+			</div>
+
+			<div class="slider-item">
+				<div class="item-img">
+					<img src="example/images/Суиндыков Адиль.jpeg" alt="">
+				</div>
+				<div class="item-text">
+					<h1>Суиндиков Адиль (поступил в НИШ)</h1>
+					<p>Адиль поступил с самым лучшим результатом. 98% по математике и 92% по
+						количественным характеристикам! Вам спасибо за мотивацию! За терпение! За тонкий юмор на
+						занятиях!</p>
+				</div>
+			</div>
+
+			<div class="slider-item">
+				<div class="item-img">
+					<img src="example/images/Жарылхасын Спартак.jpeg" alt="">
+				</div>
+				<div class="item-text">
+					<h1>Жарылхасын Спартак (поступил в НИШ, БИЛ, РФМШ)</h1>
+					<p>Замечательная платформа. Хорошая возможность подготовиться, не дорого и качественно. Вошёл в 10
+						лучших по результатам. И сами задания очень приближенные к НИШ. Это самый лучший вариант
+						подготовки.</p>
+				</div>
+			</div>
+
+			<div class="slider-item">
+				<div class="item-img">
+					<img src="example/images/Чернышев Ярослав.jpeg" alt="">
+				</div>
+				<div class="item-text">
+					<h1>Чернышев Ярослав (поступил в НИШ)</h1>
+					<p>
+						Здравствуйте, мы поступили в НИШ!!!! Хочется сказать большое вам спасибо за такой высокий
+						уровень подготовки!!! За индивидуальный подход к каждому ребёнку! За помощь и понимание!
+
+					</p>
+				</div>
+			</div>
+
+			<div class="slider-item">
+				<div class="item-img">
+					<img src="example/images/.jpeg" alt="">
+				</div>
+				<div class="item-text">
+					<h1>Жаскайратова Айгерим (поступила в НИШ)</h1>
+					<p>Адиль поступил с самым лучшим результатом. 98% по математике и 92% по
+						количественным характеристикам! Вам спасибо за мотивацию! За терпение! За тонкий юмор на
+						занятиях!</p>
+				</div>
+			</div>
+
+			<div class="slider-item">
+				<div class="item-img">
+					<img src="example/images/.jpeg" alt="">
+				</div>
+				<div class="item-text">
+					<h1>Көпжүрсін Арман (поступил в НИШ и БИЛ)</h1>
+					<p>Сіздің біліміңіздің арқасында балам КТЛ-БИЛ дың екі турынан да өтті. НЗМ-
+						НИШ емтиханынан да сүрінбей өттік. Баламның табандылығы, Ұстаздың
+						мықтылығы, Алланың қолдауы арқасында жетістікке жеттік. Сіз көп
+						шәкірттерге үлгі болдыңыз, балам әрбір сабағыңызды қалдырмай қатысып
+						отырды. Біліміңіз шыңдала берсін. Сізге алғысым шексіз, көп көп рақмет.</p>
+				</div>
+			</div>
+
+			<div class="slider-item">
+				<div class="item-img">
+					<img src="example/images/Жакупов Адильжан.jpeg" alt="">
+				</div>
+				<div class="item-text">
+					<h1>Жакупов Адильжан (поступил в НИШ)</h1>
+					<p>Добрый день! Адильжан на 31 месте. Очень довольны результатом. Спасибо!
+					</p>
+				</div>
+			</div>
+
+			<div class="slider-item">
+				<div class="item-img">
+					<img src="example/images/Нурлыбеккызы Айдана.jpeg" alt="">
+				</div>
+				<div class="item-text">
+					<h1>Нурлыбекқызы Айдана (поступил в НИШ)</h1>
+					<p>Здравствуйте! Я на 13 месте, грант. Спасибо вам!</p>
+				</div>
+			</div>
+			<div class="slider-item">
+				<div class="item-img">
+					<img src="example/images/Мубарекшенов Алдияр.jpeg" alt="">
+				</div>
+				<div class="item-text">
+					<h1>Мубарекшенов Алдияр (поступил в НИШ)</h1>
+					<p>Здравствуйте! 1141 баллов, в Караганде 2 место. Спасибо вам!!!</p>
+				</div>
+			</div>
+
+			<div class="slider-item">
+				<div class="item-img">
+					<img src="example/images/Голубев Тимур.jpeg" alt="">
+				</div>
+				<div class="item-text">
+					<h1>Голубев Тимур (поступил в НИШ)</h1>
+					<p>Спасибо большое MIRUM и особенно тренеру по логике и математике Дамиру, самый лучший учитель,
+						очень понятно объясняет, математику готовили только по его лекциям и тестам.
+					</p>
+				</div>
+			</div>
+
+			<div class="slider-item">
+				<div class="item-img">
+					<img src="example/images/Салауатов Алихан.jpeg" alt="">
+				</div>
+				<div class="item-text">
+					<h1>Салауатов Алихан (поступил в НИШ)</h1>
+					<p>Очень хочу поблагодарить платформу МИРУМ, за качественную подготовку для сдачи экзаменов в НИШ.
+						Курс очень доступен по цене и по времени,в любое удобное время можно подготовиться.</p>
+				</div>
+			</div>
+			<div class="slider-item">
+				<div class="item-img">
+					<img src="example/images/Балтемирова Камила.jpeg" alt="">
+				</div>
+				<div class="item-text">
+					<h1>Балтемирова Камила (поступила в НИШ)</h1>
+					<p>Спасибо большое, на вашей платформе смогли отработать все пробелы и подготовиться к
+						экзамену. Мы ГРАНТ! Ваша подготовка на высоте, всем говорю. Спасибо еще
+						раз, успехов вам и процветания!</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<section class="directions">
+		<div class="container">
+			<h1 class='wow animate__fadeInUp'>Мы собрали самый крутой тренерский состав и разработали мегапродуктивную
+				программу подготовки в НИШ, которая включает в себя целый комплекс направлений:</h1>
+			<div class="content">
+				<div class="item wow animate__fadeInLeft">
+					<div class="icon">
+						<i class="fa fa-calculator" aria-hidden="true"></i>
+					</div>
+					<div class="desc">
+						<h2> ⁃ Навыки математических вычислений</h2>
+						<p>математика, логика, количественные характеристики</p>
+					</div>
+				</div>
+				<div class="item wow animate__fadeInRight">
+					<div class="icon">
+						<i class="fa fa-cogs" aria-hidden="true"></i>
+					</div>
+					<div class="desc">
+						<h2> ⁃ Навыки работы с текстом по 3 языкам </h2>
+						<p>казахский, русский, английский</p>
+					</div>
+				</div>
+				<div class="item wow animate__fadeInLeft">
+					<div class="icon">
+						<i class="fa fa-clock-o" aria-hidden="true"></i>
+					</div>
+					<div class="desc">
+						<h2> - Управление временем и нагрузкой </h2>
+						<p>модули «Эффективная подготовка» и «Процесс сдачи теста»</p>
+					</div>
+				</div>
+				<div class="item wow animate__fadeInRight">
+					<div class="icon">
+						<i class="fa fa-globe" aria-hidden="true"></i>
+					</div>
+					<div class="desc">
+						<h2> ⁃ Мотивация и психологическая готовность </h2>
+						<p>видеотренинги по советам, правилам и лайфхакам сдачи тестов в НИШ</p>
+					</div>
+				</div>
+				<div class="item wow animate__fadeInLeft">
+					<div class="icon">
+						<i class="fa fa-bar-chart" aria-hidden="true"></i>
+					</div>
+					<div class="desc">
+						<h2> ⁃ Практические тренировки </h2>
+						<p>регулярные мини-тесты для совершенствования навыков</p>
+					</div>
+				</div>
+				<div class="item wow animate__fadeInRight">
+					<div class="icon">
+						<i class="fa fa-line-chart" aria-hidden="true"></i>
+					</div>
+					<div class="desc">
+						<h2> - Анализ прогресса </h2>
+						<p>выявление неусвоенных тем и своевременная корректировка программы</p>
+					</div>
+				</div>
+				<div class="item wow animate__fadeInLeft">
+					<div class="icon">
+						<i class="fa fa-bullseye" aria-hidden="true"></i>
+					</div>
+					<div class="desc">
+						<h2> - Постановка целей </h2>
+						<p>на каждый тест преподаватель выставляет цель, которую ребенок потенциально должен достигнуть
+						</p>
+					</div>
+				</div>
+				<div class="item wow animate__fadeInRight">
+					<div class="icon">
+						<i class="fa fa-trophy" aria-hidden="true"></i>
+					</div>
+					<div class="desc">
+						<h2> ⁃ Турниры и игровые процессы </h2>
+						<p>регулярные турниры позволяют развить навык конкурентоспособности и аналитического мышления
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="questions">
+		<div class="container">
+			<div class="content" id="content">
+				<h1 class="wow animate__fadeInLeft">FAQ (Ответы на популярные вопросы)</h1>
+				<div data-wow-delay=".1s"
+					class="tabs__section intro__holder--text wow animate__animated animate__fadeInLeft">
+					<div class="tabs-header">
+						- Что такое Мирум?
+						<button v-on:click="visible=!visible">{{visible?'Скрыть':'Отобразить'}}</button>
+					</div>
+
+					<transition name="slide-fade">
+						<p v-if="visible">Мирум - инновационная образовательная платформа для прогрессивного
+							обучения и развития
+							интеллектуальных навыков с применением игровых методик. Программа разработана
+							специалистами
+							Центра образовательных проектов «SMG Education».
+							Выбирая нашу платформу, вы будете иметь доступ ко всем урокам и материалам, где бы
+							вы не
+							находились.</p>
+					</transition>
+				</div>
+				<div data-wow-delay=".2s" class="tabs__section wow animate__animated animate__fadeInLeft">
+					<div class="tabs-header">
+						- Как проходит процесс обучения?
+						<button v-on:click="visible1=!visible1">{{visible1?'Скрыть':'Отобразить'}}</button>
+					</div>
+
+					<transition name="slide-fade">
+						<p v-if="visible1">По математике у ребёнка каждую неделю открываются видеоуроки с объяснением
+							трёх новых тем. К каждой теме есть соответствующее домашнее задание и тренировочный тест.
+							По количественным характеристикам проводится один видеоурок в формате викторины, после
+							которого доступно домашнее задание и тренировочный тест.
+							Результаты тренировочного теста можно посмотреть сразу после его сдачи. После теста
+							открывается доступ к видеоразбору, в котором преподаватель объясняет, как решаются задания
+							из данного теста.
+							По казахскому, русскому и английскому языкам для ученика в начале открыты видеоуроки по
+							улучшению навыков чтения и работы с текстом, а затем каждую неделю у него будет возможность
+							решать тренировочные тесты. Разборы по ним предоставляются в текстовом виде.
+							Естествознание ?
+							Суббота - день итоговых тестов по всем предметам, с дальнейшими текстовыми разборами по
+							языкам и видеоразборами по математике и количественным характеристикам.</p>
+					</transition>
+				</div>
+
+				<div data-wow-delay=".3s" class="tabs__section wow animate__animated animate__fadeInLeft">
+					<div class="tabs-header">
+						- Как строится взаимодействие между тьюторами и учениками?
+						<button v-on:click="visible2=!visible2">{{visible2?'Скрыть':'Отобразить'}}</button>
+					</div>
+
+					<transition name="slide-fade">
+						<p v-if="visible2">Связь с учеником и родителем поддерживает эдвайзер - ваш персональный
+							помощник
+							на время всего обучения. Эдвайзер будет отслеживать динамику успеваемости и прогресса
+							ребёнка, следить за выполнением домашних заданий и проверять их, выдавать решение возникших
+							проблем, отвечать на интересующие вопросы, помогать в адаптации и усвоении материала.
+							С тьюторами ученики могут связаться и задать им вопросы в специальном чате внутри самой
+							платформы во время и после занятий. Так же у них будут назначаться встречи в нашем
+							интегрированном сервисе для видеоконференций.
+
+						</p>
+					</transition>
+				</div>
+
+				<div data-wow-delay=".4s" class="tabs__section  wow animate__animated animate__fadeInLeft">
+					<div class="tabs-header">
+						- В какое время проходят онлайн уроки? в одно и то же определенное время?
+						<button v-on:click="visible3=!visible3">{{visible3?'Скрыть':'Отобразить'}}</button>
+					</div>
+
+					<transition name="slide-fade">
+						<p v-if="visible3">Расписание уроков постоянное и подстраивается под смену ученика в школе.</p>
+					</transition>
+				</div>
+
+				<div data-wow-delay=".5s" class="tabs__section  wow animate__animated animate__fadeInLeft">
+					<div class="tabs-header">
+						- Чем ваша платформа отличается от других?
+						<button v-on:click="visible4=!visible4">{{visible4?'Скрыть':'Отобразить'}}</button>
+					</div>
+
+					<transition name="slide-fade">
+						<p v-if="visible4">Всё необходимое находится под рукой в одном сайте и мобильном приложении.
+							Если
+							какой-то материал начнёт забываться, то Ваш ребёнок сможет просматривать видеоуроки столько,
+							сколько нужно.
+							Внедрение игровых процессов - важный компонент в современном образовании. Программа Mirum
+							имеет формат эдютеймент - это сочетание образовательных и развлекательных функций, что
+							позволяет удерживать внимание и интерес ребёнка к процессу подготовки.
+							Хорошо проделанная работа должна вознаграждаться, поэтому у нас действует внутренняя игровая
+							валюта Edcoin. Эдкоины выдают за выполнение целей, победу в турнире, высокие показатели и
+							многое другое. Это настоящие деньги, на которые ребёнок может купить то, что так давно
+							хотел!
+							Так же на нашей программе Вас ждут: тренинги и советы по эффективной подготовке, участие в
+							турнирах и челленджах.</p>
+					</transition>
+				</div>
+				<div data-wow-delay=".6s" class="tabs__section  wow animate__animated animate__fadeInLeft">
+					<div class="tabs-header">
+
+						- На что мы можем потратить эдкоины?
+
+						<button v-on:click="visible5=!visible5">{{visible5?'Скрыть':'Отобразить'}}</button>
+					</div>
+
+					<transition name="slide-fade">
+						<p v-if="visible5">На заработанные эдкоины можно приобрести товары в специальном магазине
+							MirumStore.MirumStore – это магазин с обширным выбором товаров на любой вкус. После
+							оформления, Вы
+							гарантированно получите свой товар в течение месяца!
+							Или же, Вы можете воспользоваться функцией обмена и при помощи эдкоинов оплатить следующий
+							месяц обучения.
+						</p>
+					</transition>
+				</div>
+
+				<div data-wow-delay=".7s" class="tabs__section  wow animate__animated animate__fadeInLeft">
+					<div class="tabs-header">
+						- Если нет компьютера?
+						<button v-on:click="visible6=!visible6">{{visible6?'Скрыть':'Отобразить'}}</button>
+					</div>
+
+					<transition name="slide-fade">
+						<p v-if="visible6">В таком случае Вы можете заниматься через мобильное приложение Mirum, которое
+							поддерживается на IOS и Android. Находясь в дороге в школу или со школы, в гостях, где
+							угодно, ребёнок сможет изучать новые темы или повторять пройденные.</p>
+					</transition>
+				</div>
+
+				<div data-wow-delay=".8s" class="tabs__section  wow animate__animated animate__fadeInLeft">
+					<div class="tabs-header">
+
+						- Насколько онлайн обучение эффективно?
+
+						<button v-on:click="visible7=!visible7">{{visible7?'Скрыть':'Отобразить'}}</button>
+					</div>
+
+					<transition name="slide-fade">
+						<p v-if="visible7">Mirum разрушает все стереотипы касательно онлайн обучения. Об эффективности
+							красноречивее всяких слов скажут успехи наших учеников, которые добились своих целей, заняли
+							места в ТОП-3, ТОП-10 и ТОП-20, и теперь будут обучаться на гранте в школах мечты.
+						</p>
+					</transition>
+				</div>
+
+				<div data-wow-delay=".9s" class="tabs__section  wow animate__animated animate__fadeInLeft">
+					<div class="tabs-header">
+
+						- Почему вы говорите, что ваши тесты максимально приближенны к тестам в НИШ?
+
+						<button v-on:click="visible8=!visible8">{{visible8?'Скрыть':'Отобразить'}}</button>
+					</div>
+
+					<transition name="slide-fade">
+						<p v-if="visible8">Благодаря многолетнему опыту подготовки детей к поступлению в НИШ, у нас
+							выработалась собственная программа обучения. Мы ежегодно следим на новостями и
+							нововведениями в сфере образования и улучшаем нашу программу, поэтому она всегда является
+							актуальной.
+						</p>
+					</transition>
+				</div>
+
+				<div data-wow-delay="1s" class="tabs__section  wow animate__animated animate__fadeInLeft">
+					<div class="tabs-header">
+
+						- Кто будет преподавать моему ребёнку?
+
+						<button v-on:click="visible9=!visible9">{{visible9?'Скрыть':'Отобразить'}}</button>
+					</div>
+
+					<transition name="slide-fade">
+						<p v-if="visible9">
+							В Mirum'е работает особая команда. Тьюторы с многолетним опытом каждый год проходят
+							корпоративное обучение и повышают свои навыки и компетенции в работе с детьми. Они делают
+							уроки максимально приятными и продуктивными для учеников.
+
+
+						</p>
+					</transition>
+				</div>
+
+				<div data-wow-delay="1.1s" class="tabs__section  wow animate__animated animate__fadeInLeft">
+					<div class="tabs-header">
+
+						- Как производится оплата?
+
+						<button v-on:click="visible10=!visible10">{{visible10?'Скрыть':'Отобразить'}}</button>
+					</div>
+
+					<transition name="slide-fade">
+						<p v-if="visible10">
+							Оплату производится онлайн через сайт. Для этого указываются данные карты, а счёт на оплату
+							выставляется автоматически.
+						</p>
+					</transition>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="programs">
+		<div class="container">
+			<div class="text wow animate__fadeInLeft">
+				<h1>ПАКЕТЫ ПРОГРАММЫ «NIS PREPARATION COURSE»</h1>
+				<p>Позвольте Вашему ребенку достигнуть образовательных целей с командой профессионалов.</p>
+			</div>
+
+			<div class="wrapper">
+				<div class="pricing-card wow animate__fadeInLeft">
+					<div class="inner-card">
+						<h3 class="card-header">ПАКЕТ «INTELLIGENT»</h3>
+						<div class="price">18 500 <span>тг/мес</span></div>
+						<ul>
+							<li>Видеоуроки по предметам «Математика» и «Количественные характеристики»</li>
+							<li>Видеоуроки по технике работы с текстом по предмету «Английский язык»</li>
+							<li>Видеоразборы тренировок и еженедельных тестов, текстовые разборы</li>
+							<li>Еженедельные тесты по 6 предметам</li>
+							<li>Регулярные тренировки по 6 предметам</li>
+							<li>Курс «Тренинги и советы по эффективной подготовке»</li>
+							<li>Участие в турнирах и челенджах</li>
+						</ul>
+					</div>
+					<a href="#" class="order-btn">Order Now</a>
+				</div>
+
+				<div class="pricing-card wow animate__fadeInRight">
+					<div class="inner-card">
+						<h3 class="card-header">ПАКЕТ «GENIUS»</h3>
+						<div class="price">25 900 <span>тг/мес</span></div>
+						<ul>
+							<li>Видеоуроки по предметам «Математика» и «Количественные характеристики»</li>
+							<li>Видеоуроки по технике работы с текстом по предмету «Английский язык»</li>
+							<li>Видеоразборы тренировок и еженедельных тестов, текстовые разборы</li>
+							<li>Еженедельные тесты по 6 предметам</li>
+							<li>Регулярные тренировки по 6 предметам</li>
+							<li>Курс «Тренинги и советы по эффективной подготовке»</li>
+							<li>Участие в турнирах и челенджах</li>
+
+							<li>Игровая валюта Edcoin</li>
+							<li>Персональный эдвайзер</li>
+							<li>Анализ прогресса</li>
+							<li>Корректировка программы тренировок</li>
+							<li>Работа по персональным целям</li>
+							<li>Ежемесячный отчет по результатам тестов и анализ прогресса успеваемости</li>
+							<li>Онлайн видеоконференции по 6 предметам</li>
+						</ul>
+					</div>
+					<a href="#" class="order-btn">Order Now</a>
+				</div>
+			</div>
+
+		</div>
+	</section>
+
+	<section class="form" id="form">
+		<div class="container">
+			<div class="content wow animate__fadeInLeftBig">
+				<div class="title">
+					<h1>Заполните форму заявки и получите 24 часа бесплатного доступа</h1>
+				</div>
+				<div class="subtitle ">
+					<p><span>1</span>Вы отправляете заявку на регистрацию</p>
+					<p><span>2</span>Мы свяжемся с Вами для уточнения данных</p>
+					<p><span>3</span>Регистрация и получение доступа</p>
+				</div>
+				<div class="row">
+					<div class="form-group">
+						<input class="group-name" placeholder="Ваше имя" type="text">
+					</div>
+					<div class="form-group">
+						<input class="group-item" placeholder="Город" type="text">
+						<input class="group-item" placeholder="Регион" type="text">
+					</div>
+					<div class="form-group">
+						<input class="group-control" id="phone" name="phone" placeholder="+7(000)000-00-00" type="text">
+						<input class="group-control" placeholder="Класс" type="text">
+						<div class="custom-select">
+							<select>
+								<option value="">Выберите пакет</option>
+								<option value="">Пакет "Intelligent"</option>
+								<option value="">Пакет "Genius"</option>
+							</select>
+						</div>
+					</div>
+				</div>
+				<div class="content-btn">
+					<button>Отправить</button>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer class="footer">
+		<div class="container">
+			<div class="content">
+				<img src="example/images/smg.svg" alt="">
+				<h2>Центр образовательных проектов «SMG Education»</h2>
+				<p>По дополнительным вопросам: <span><a href="tel:+77078019119">+7 707 801 91 19, </a> <a
+							href="tel:+7 775 467 61 53">+7 775 467 61 53</a></span></p>
+			</div>
+		</div>
+	</footer>
+
+
+	<script src="example/js/main.js"></script>
+
+	<script>
+		let ctx = document.querySelector('#myChart').getContext('2d');
+		ctx.canvas.parentNode.style.height = "300px";
+		let myChart = new Chart(ctx, {
+			type: 'doughnut',
+			data: {
+				labels: [1, 2, 3, 4, 5],
+				datasets: [{
+					label: "Students",
+					data: [78, 44, 28, 17, 5],
+					backgroundColor: [
+						"white"
+					],
+					borderColor: [
+						'#80d8ff',
+						'#82b1ff',
+						'#b388ff',
+						'#80d8ff',
+						'#ea80fc'
+					],
+					borderWidth: 4
+				}]
+
+			},
+			options: {
+				maintainAspectRatio: false,
+			}
+		})
+
+	</script>
+
+	<script>
+		var app = new Vue({
+			el: '#content',
+			data: {
+				visible: false,
+				visible1: false,
+				visible2: false,
+				visible3: false,
+				visible4: false,
+				visible5: false,
+				visible6: false,
+				visible7: false,
+				visible8: false,
+				visible9: false,
+				visible10: false
+			},
+
+			methods: {
+				close_shit: function (event) {
+
+				}
+			}
+
+		});
+	</script>
+</body>
+
+</html>
